@@ -1,0 +1,124 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.strobe-events-container{
+    max-width: 900px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.strobe-link,
+.strobe-events-container a{
+    color: rgb(113,156,184);
+    text-decoration: underline;
+}
+
+.strobe-events-container a:hover{
+    color: rgb(145, 190, 218);
+}
+
+.strobe-events-container h3 a{
+    text-decoration: none;
+}
+
+.strobe-events-container .strobe-event-wrapper {
+    margin: 30px 0 30px 0;
+    clear: both;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.strobe-events-container .strobe-event-wrapper .strobe-event-image,
+.strobe-events-container .strobe-event-wrapper .strobe-event-details {
+    width: 45%;
+}
+
+.strobe-events-container .strobe-event-wrapper .strobe-event-image {
+    float: left;
+}
+
+.strobe-events-container .strobe-event-wrapper .strobe-event-image img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.strobe-events-container .strobe-event-wrapper .strobe-event-details,
+.strobe-events-overlay-data-container{
+    color: #7c7c7c;
+    font-size: 14px;
+}
+
+.strobe-events-container .strobe-event-wrapper .strobe-event-details {
+    padding-left: 15px;
+    min-height: 260px;
+    float: right;
+}
+
+.strobe-events-container .strobe-event-wrapper .strobe-event-links {
+    font-size: 12px;
+    text-align: right;
+    width: 100%;
+    clear: both;
+}
+
+.strobe-events-container .strobe-event-wrapper .strobe-event-links a{
+    margin-right: 10px;
+}
+
+.strobe-overlay .vbox-inline{
+    height: auto;
+    width: auto;
+    display: inline-block;
+}
+
+.strobe-overlay .vbox-inline{
+    border-radius: 0 0 3px 3px;
+}
+
+.strobe-overlay .vbox-inline img{
+    display: block;
+}
+
+.strobe-events-overlay-data-container{
+    position: relative;
+    padding: 20px;
+}
+
+.strobe-events-overlay-data-container .strobe-link{
+    padding-left: 8px;
+    border-left: 1px solid #ccc;
+}
+
+.strobe-events-overlay-data-container .strobe-event-time{
+    padding-right: 8px;
+}
+
+.strobe-overlay-close{
+    color: #777;
+    font: 14px/100% arial, sans-serif;
+    position: absolute;
+    right: 10px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #fff;
+    top: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.strobe-overlay-close:after {
+    content: '\2716';
+}
+
+@media screen and (max-width: 768px) {
+    .strobe-events-container .strobe-event-wrapper .strobe-event-image,
+    .strobe-events-container .strobe-event-wrapper .strobe-event-details {
+        width: 100%;
+    }
+
+    .strobe-events-container .strobe-event-wrapper .strobe-event-details {
+        padding-left: 0;
+    }
+}
